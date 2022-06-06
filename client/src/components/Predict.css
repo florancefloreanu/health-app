@@ -1,0 +1,56 @@
+.predict-container {
+    margin: 2em auto;
+    max-width: 800px;
+}
+
+.prediction-bold {
+    font-weight: bold;
+}
+
+.symptoms-container {
+    text-align: center;
+}
+
+.symptoms-list {
+    list-style-type: none;
+    display: block;
+    width: fit-content;
+    margin: auto;
+
+    white-space: nowrap;
+}
+
+.symptoms-list label {
+    width: 100%;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+
+    padding: 1em 2em;
+    border: 1px solid #BBB;
+    cursor: pointer;
+
+    transition: all ease .33s;
+}
+
+.symptoms-list li:not(:last-child) label {
+    border-bottom: none;
+}
+
+.symptoms-list li:first-child label {
+    border-radius: .5em .5em 0 0;
+}
+
+.symptoms-list li:last-child label {
+    border-radius: 0 0 .5em .5em;
+}
+
+.symptoms-list label:hover {
+    background-color: rgba(0, 0, 0, .06);
+}
+
+.symptoms-list li:last-child label {
+    margin-bottom: 2em;
+}
